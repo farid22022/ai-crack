@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:ital,wght@0,400;1,100&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+h5,
+a,
+.logo {
+  font-family: "Mooli", sans-serif;
+}
+button {
+  @apply p-3  border-black hover:border-orange-400 border-2 rounded-full hover:text-white hover:bg-orange-400 transition-all duration-200 hover:shadow backdrop-blur-lg shadow-inner shadow-black;
+}
+.btn {
+  @apply p-3  border-black hover:border-orange-400 border-2 rounded-full hover:text-white hover:bg-orange-400 transition-all duration-200 hover:shadow backdrop-blur-lg shadow-inner shadow-black;
+}
+button.active {
+  @apply p-3 border-orange-400 border-2 rounded-full text-white bg-orange-400 transition-all duration-200 shadow backdrop-blur-lg;
+}
+a:hover {
+  @apply text-orange-400;
+}
+
+a.active {
+  font-weight: bold;
+  @apply text-orange-500;
+}
+
+.container {
+  @apply w-11/12 mx-auto;
+}
+
